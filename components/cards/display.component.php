@@ -1,0 +1,20 @@
+<?php
+function displayMovies($movies) {
+    echo '<div class ="movie-container">';
+    echo '<div class ="movie-table">';
+    foreach ($movies as $movie) {
+        echo '<div class ="movie-card">';
+        echo "<h2>{$movie['title']}</h2>";
+        echo "<p>Genre: {$movie['genre']}</p>";
+        echo "<p>Date: {$movie['date']}</p>";
+        echo "<p>Time: {$movie['time']}</p>";
+        echo '</div>';
+    }
+
+    echo '</div>';
+    echo '</div>';
+
+}
+
+
+?>

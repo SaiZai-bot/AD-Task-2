@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #AFDDE5;
+    
+}
+
 .header {
-    background-color: blue;
+    background-color: #003135;
     color:  white;
     padding: 20px;
     text-align: center;
@@ -30,29 +35,31 @@
 
 .list-item a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 600;
 }
 
 .list-item a:hover {
-    color: wheat;
+    color: #003135;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: #AFDDE5;
     width: 30px;
     padding: 10px;
 }
+
+
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
-    background-color: antiquewhite;
+    background-color: #AFDDE5;
     text-align: center;
+    height: 90vh;
 }
 
 .description {
-    background-color: white;
+    background-color: #003135;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -63,20 +70,20 @@
 .description h2 {
     font-size: large;
     margin-bottom: 10px;
-    color: black;
+    color: white;
 }
 
 .description p {
     font-size: medium;
     margin-bottom: 20px;
-    color: grey;
+    color: whitesmoke
 }
 
 .button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: antiquewhite;
-    color: burlywood;
+    background-color: #0FA4AF;
+    color: white;
     border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
@@ -84,6 +91,6 @@
 }
 
 .button:hover {
-    background-color: burlywood;
-    color: antiquewhite;
+    background-color: #AFDDE5;
+    color: #003135;
 }
