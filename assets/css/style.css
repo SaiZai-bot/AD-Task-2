@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 
 body {
     background-color: #AFDDE5;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -20,7 +22,7 @@ body {
 .title {
     font-size: 50px;
     margin-bottom: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+    font-family: 'Montserrat',sans-serif;
 }
 
 
@@ -55,7 +57,8 @@ body {
     align-items: center;
     background-color: #AFDDE5;
     text-align: center;
-    height: 90vh;
+    height: 70vh;
+    
 }
 
 .description {

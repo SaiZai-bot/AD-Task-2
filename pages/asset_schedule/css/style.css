@@ -41,3 +41,17 @@
 .movie-card:hover h2 {
     color:#003135;
 }
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-poster {
+    transform: scale(1.1);
+}

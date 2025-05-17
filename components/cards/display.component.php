@@ -8,6 +8,7 @@ function displayMovies($movies) {
         echo "<p>Genre: {$movie['genre']}</p>";
         echo "<p>Date: {$movie['date']}</p>";
         echo "<p>Time: {$movie['time']}</p>";
+        echo '<img src="' . $movie['poster'] . '" alt="' . $movie['title'] . 'Poster" class ="movie-poster">';
         echo '</div>';
     }
 

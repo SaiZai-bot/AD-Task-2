@@ -17,6 +17,8 @@ head();
     </div>
 </section>
 
+
+
 <?php
 footer();
 ?>
