@@ -3,7 +3,7 @@
         'name' => 'zaimonemiranda/ad-task-2',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '90f5f58d07b72a2c6b203b899c3d94fa522f2887',
+        'reference' => '3adc6d11fe76931df7ab3ddd02ba92dbe3c002f8',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'zaimonemiranda/ad-task-2' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '90f5f58d07b72a2c6b203b899c3d94fa522f2887',
+            'reference' => '3adc6d11fe76931df7ab3ddd02ba92dbe3c002f8',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
