@@ -24,8 +24,6 @@
 
 [![wakatime](https://wakatime.com/badge/user/04412757-f1c1-4ba6-86ec-7b8428992c73/project/03c95e29-0ebe-4912-8362-873d5d809b19.svg)](https://wakatime.com/badge/user/04412757-f1c1-4ba6-86ec-7b8428992c73/project/03c95e29-0ebe-4912-8362-873d5d809b19)
 
----
-
 <br />
 <br />
 
