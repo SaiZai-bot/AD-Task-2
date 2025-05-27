@@ -1,47 +1,49 @@
 services:
-  server:
+  web-app-php:
     build:
       context: .
+    container_name: web-app-php-service
     ports:
-      - 8000:80
+      - "8000:8000"
     develop:
       watch:
-        - path: ./
-          target: /app
+        - path: .
+          target: /var/www/html
           action: sync
         - path: ./composer.json
           action: rebuild
         - path: ./composer.lock
           action: rebuild
-          # The commented out section below is an example of how to define a PostgreSQL
-          # database that your application can use. `depends_on` tells Docker Compose to
-          # start the database before your application. The `db-data` volume persists the
-          # database data between container restarts. The `db-password` secret is used
-          # to set the database password. You must create `db/password.txt` and add
-          # a password of your choosing to it before running `docker-compose up`.
-          #     depends_on:
-          #       db:
-          #         condition: service_healthy
-          #   db:
-          #     image: postgres
-          #     restart: always
-          #     user: postgres
-          #     secrets:
-          #       - db-password
-          #     volumes:
-          #       - db-data:/var/lib/postgresql/data
-          #     environment:
-          #       - POSTGRES_DB=example
-          #       - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
-          #     expose:
-          #       - 5432
-          #     healthcheck:
-          #       test: [ "CMD", "pg_isready" ]
-          #       interval: 10s
-          #       timeout: 5s
-          #       retries: 5
-          # volumes:
-          #   db-data:
-          # secrets:
-          #   db-password:
-          #     file: db/password.txt
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: web-app-php-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootPassword
+      MONGO_INITDB_DATABASE: mydatabase
+    ports:
+      - "27111:27017"
+    volumes:
+      - web-app-php-mongodb:/data/db/mongodb
+
+  postgresql:
+    image: postgres:15
+    container_name: web-app-php-postgresql
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5112:5432"
+    volumes:
+      - web-app-php-postgresql:/data/db/postgresql
+
+volumes:
+  web-app-php-mongodb:
+    driver: local
+  web-app-php-postgresql:
+    driver: local
