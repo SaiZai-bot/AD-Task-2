@@ -22,7 +22,7 @@
 
 ![](https://visit-counter.vercel.app/counter.png?page=SaiZai-bot/AD-Task-2)
 
-[![wakatime](https://wakatime.com/badge/user/04412757-f1c1-4ba6-86ec-7b8428992c73/project/03c95e29-0ebe-4912-8362-873d5d809b19.svg)](https://wakatime.com/badge/user/04412757-f1c1-4ba6-86ec-7b8428992c73/project/03c95e29-0ebe-4912-8362-873d5d809b19)
+[![wakatime](https://wakatime.com/badge/user/04412757-f1c1-4ba6-86ec-7b8428992c73/project/553f0489-da08-47ed-ba38-bd39c50c64e9.svg)](https://wakatime.com/badge/user/04412757-f1c1-4ba6-86ec-7b8428992c73/project/553f0489-da08-47ed-ba38-bd39c50c64e9)
 
 <br />
 <br />
@@ -65,8 +65,7 @@ This is a movie website, displaying the movies' schedule, time, and genre for us
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 
-- Authentication & Authorization
-- CRUD Operations for Invetory System
+- display of Movie schedule using loop
 
 ### Technology
 
@@ -76,12 +75,6 @@ This is a movie website, displaying the movies' schedule, time, and genre for us
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-#### Framework/Library
-
-#### Databases
-
-#### Deployment
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Rules, Practices and Principles
 
@@ -102,38 +95,48 @@ This is a movie website, displaying the movies' schedule, time, and genre for us
 10. File Structure to follow below.
 
 ```
-AD-ProjectName
+AD-Task-2
 └─ assets
 |   └─ css
-|   |   └─ name.css
-|   └─ img
-|   |   └─ name.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ name.js
+|   |   └─ style.css
+|
 └─ components
-|   └─ name.component.php
+|   └─cards
+|      └─ display.component.php
 |   └─ templates
-|      └─ name.component.php
+|      └─ foot.component.php
+|      └─ head.component.php
+|      └─ nav.component.php
 └─ handlers
-|   └─ name.handler.php
+|   └─ pageData.handler.php
 └─ pages
-|  └─ pageName
+|  └─ asset_schedule
 |     └─ assets
 |     |  └─ css
-|     |  |  └─ name.css
+|     |  |  └─ style.css
 |     |  └─ img
-|     |  |  └─ name.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ name.js
+|     |  |  └─ barbie.jpeg
+|     |  |  └─ batman.jpeg
+|     |  |  └─ dune.jpeg
+|     |  |  └─ everything.jpeg
+|     |  |  └─ knives.jpeg
+|     |  |  └─ marvels.jpeg
+|     |  |  └─ misson.jpeg
+|     |  |  └─ oppen.jpeg
+|     |  |  └─ spider.jpeg
+|     |  |  └─ whale.jpeg
 |     └─ index.php
 └─ utils
-|   └─ name.utils.php
+|   └─ htmlEscape.utils.php
 └─ vendor
 └─ .gitignore
 └─ bootstrap.php
+└─ compose.yaml
 └─ composer.json
 └─ composer.lock
+└─ Dockerfile
 └─ index.php
+└─ README.Docker.md
 └─ readme.md
 └─ router.php
 ```
@@ -145,7 +148,6 @@ AD-ProjectName
 
 | Title        | Purpose                                                                       | Link          |
 | ------------ | ----------------------------------------------------------------------------- | ------------- |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| W3School | syntax for PHP | www.w3schools.com |
+| ChatGPT | AI assistant for debugging | www.chatgpt.com |
+

@@ -1,9 +1,9 @@
 <?php
     $navilist = [
-       ["label" => "Home", "url" => "/"],
-       ["label" => "News", "url" => "/"],
-       ["label" => "About Us", "url" => "/"],
-       ["label" => "Contact Us", "url" => "/"]
+       ["label" => "Home", "url" => "/index.php"],
+       ["label" => "News", "url" => "/index.php"],
+       ["label" => "About Us", "url" => "/index.php"],
+       ["label" => "Contact Us", "url" => "/index.php"]
     ];
 
     $MovieSchedule = [

@@ -14,7 +14,7 @@ head();
     <div class = "description">
         <h2>Welcome To Movie Schedule</h2>
         <p>Click Below to View Featured Movie Schedules!</p>
-        <a href ="/pages/schedule.php" class = "button"> View Schedules</a>
+        <a href ="/pages/index.php.php" class = "button"> View Schedules</a>
     </div>
 </section>
 
